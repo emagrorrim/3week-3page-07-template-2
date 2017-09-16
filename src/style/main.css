@@ -17,6 +17,8 @@ a {
   color: #00a18a;
 }
 
+/* common */
+
 .vertical-center {
   display: flex;
   align-items: center;
@@ -36,6 +38,8 @@ body {
   width: 100%;
   display: flex;
 }
+
+/* left aside */
 
 .left-aside {
   width: 20%;
@@ -92,6 +96,8 @@ body {
   border-radius: 5px;
   border: 1px solid #e5e5e5;
 }
+
+/* content */
 
 /* 375 */
 @media screen and (max-width: 480px) {
