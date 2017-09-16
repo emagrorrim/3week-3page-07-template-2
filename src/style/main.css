@@ -5,6 +5,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 ul li {
   list-style: none;
 }
@@ -27,6 +31,8 @@ a {
 body {
   display: flex;
   justify-content: center;
+  padding-top: 40px;
+  font-family: 'PT Serif'
 }
 
 .container {
@@ -43,12 +49,12 @@ body {
 
 .left-aside {
   width: 20%;
-  margin-right: 5%;
+  margin-right: 20px;
 }
 
 .left-aside .logo {
   width: 60%;
-  padding: 20%;
+  padding: 0 20% 50px;
 }
 
 .left-aside .nav, .left-aside .tweet, .left-aside .friends {
@@ -76,28 +82,130 @@ body {
 
 .left-aside .aside-section .aside-section-title {
   border-bottom: 1px dashed #e5e5e5;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: normal;
   padding: 5px 0;
 }
 
 .left-aside .aside-section .aside-section-content {
   margin-top: 10px;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  line-height: 1.8em;
 }
 
 .left-aside .aside-section .aside-section-button {
   width: 100%;
   margin: 15px 0;
-  display: flex;
-  justify-content: center;
   background: none;
   color: #00a18a;
   border-radius: 5px;
   border: 1px solid #e5e5e5;
+  font-style: italic;
+  font-size: 0.6em;
 }
 
 /* content */
+
+.right-content .show-window {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-window .hero-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 450px;
+  background-image: url(../../resources/foodsense.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.show-window .hero-image h1 {
+  margin-top: 300px;
+  background-color: white;
+  padding: 10px 3%;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.show-window .hero-image .subtitle {
+  background-color: black;
+  color: white;
+  padding: 10px 3%;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.show-window .hero-image .photoBy {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, .5);
+  font-size: 0.3em;
+  padding: 5px 10px;
+  color: #555555;
+}
+
+.show-window .highlights {
+  display: flex;
+}
+
+.highlights .highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  width: 25%;
+  height: 80px;
+  background-color: #eff8f7;
+  border-left: 1px solid white;
+  border-right: 1px solid #daefec;
+  color: #3bab98;
+}
+
+.highlights .selected {
+  background-color: #daefec;
+}
+
+.highlight .highlight-title {
+  font-size: 1em;
+}
+
+.highlight .highlight-content {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.right-content .notice {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px dashed #e5e5e5;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.right-content .notice .iconfont {
+  font-size: 2em;
+  margin: 1% 2%;
+}
+
+.notice .notice-content {
+  font-size: 0.8em;
+  width: 50%;
+}
+
+.notice .email {
+  width: 30%;
+  height: 1.5em;
+}
+
+.notice .subscribe {
+  margin: 1%;
+}
 
 /* 375 */
 @media screen and (max-width: 480px) {
