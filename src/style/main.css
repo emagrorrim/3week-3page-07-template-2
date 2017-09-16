@@ -1,0 +1,103 @@
+/* clear default */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #00a18a;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.left-aside {
+  width: 20%;
+  margin-right: 5%;
+}
+
+.left-aside .logo {
+  width: 60%;
+  padding: 20%;
+}
+
+.left-aside .nav, .left-aside .tweet, .left-aside .friends {
+  padding-left: 20%;
+}
+
+.left-aside .nav .nav-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.nav-item a {
+  font-style: italic;
+}
+
+.left-aside .iconfont {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.left-aside .aside-section {
+  margin-top: 20px;
+  color: #333333;
+}
+
+.left-aside .aside-section .aside-section-title {
+  border-bottom: 1px dashed #e5e5e5;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 5px 0;
+}
+
+.left-aside .aside-section .aside-section-content {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.left-aside .aside-section .aside-section-button {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  background: none;
+  color: #00a18a;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+/* 375 */
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  
+}
