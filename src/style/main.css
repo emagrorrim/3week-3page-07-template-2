@@ -48,17 +48,14 @@ body {
 /* left aside */
 
 .left-aside {
-  width: 20%;
-  margin-right: 20px;
+  width: 17%;
+  margin-right: 40px;
+  min-width: 175px;
 }
 
 .left-aside .logo {
   width: 60%;
-  padding: 0 20% 50px;
-}
-
-.left-aside .nav, .left-aside .tweet, .left-aside .friends {
-  padding-left: 20%;
+  padding: 0 20% 50px 0;
 }
 
 .left-aside .nav .nav-item {
@@ -207,11 +204,53 @@ body {
   margin: 1%;
 }
 
-/* 375 */
-@media screen and (max-width: 480px) {
+.posts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
 
+.posts .post {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post .post-image {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.post .post-title {
+  color: #3bab98;
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+
+.post .post-content {
+  padding: 10px 0;
+  font-size: 0.9em;
+}
+
+.post .post-date-and-link {
+  display: flex;
+}
+
+.post .post-date {
+  color: #aaaaaa;
+  font-size: 0.8em;
+}
+
+.post .read {
+  font-size: 0.8em;
+  border-bottom: 1px dashed #e5e5e5;
 }
 
 @media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 480px) {
   
 }
