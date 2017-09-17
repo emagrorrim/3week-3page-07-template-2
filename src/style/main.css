@@ -289,7 +289,7 @@ footer .iconfont {
   color: #999999;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   body {
     padding: 0;
   }
@@ -350,7 +350,7 @@ footer .iconfont {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 
   .left-aside {
